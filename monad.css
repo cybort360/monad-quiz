@@ -1,0 +1,99 @@
+:root {
+  --primary-color: #1b0448;
+  --secondary-color: #fff;
+  --text-color: rgba(255, 255, 255, 0.5);
+  --font-family: "Quicksand", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 3rem auto;
+}
+
+header h1 {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  text-align: center;
+  font-size: 3rem;
+}
+
+section,
+section p {
+  color: #000;
+  font-family: var(--font-family);
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+span {
+  color: var(--primary-color);
+  font-size: 4rem;
+}
+
+main {
+  background-color: #836ef9;
+  font-family: var(--font-family);
+}
+
+main h2 {
+  color: var(--secondary-color);
+  padding: 3.5rem;
+}
+
+p {
+  color: var(--secondary-color);
+}
+
+label {
+  color: var(--text-color);
+}
+
+.question-one *,
+.question-two *,
+.question-three *,
+.question-four *,
+.question-five *,
+.question-six *,
+.question-seven *,
+.question-eight *,
+.question-nine *,
+.question-ten * {
+  padding: 0.4rem;
+}
+
+.question-one,
+.question-two,
+.question-three,
+.question-four,
+.question-five,
+.question-six,
+.question-seven,
+.question-eight,
+.question-nine,
+.question-ten {
+  margin-top: 0.5rem;
+  margin-left: 3rem;
+}
+
+.submit {
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  padding-bottom: 1rem;
+}
+
+.submit input {
+  all: unset;
+  padding: 0.5rem;
+  color: #1b0448;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
