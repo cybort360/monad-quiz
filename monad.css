@@ -66,7 +66,17 @@ label {
 .question-seven *,
 .question-eight *,
 .question-nine *,
-.question-ten * {
+.question-ten *,
+.question-eleven *,
+.question-twelve *,
+.question-thirteen *,
+.question-fourteen *,
+.question-fifteen *,
+.question-sixteen *,
+.question-seventeen *,
+.question-eighteen *,
+.question-nineteen *,
+.question-twenty * {
   padding: 0.4rem;
 }
 
@@ -79,7 +89,17 @@ label {
 .question-seven,
 .question-eight,
 .question-nine,
-.question-ten {
+.question-ten,
+.question-eleven,
+.question-twelve,
+.question-thirteen,
+.question-fourteen,
+.question-fifteen,
+.question-sixteen,
+.question-seventeen,
+.question-eighteen,
+.question-nineteen,
+.question-twenty {
   margin-top: 0.5rem;
   margin-left: 3rem;
 }

@@ -230,6 +230,198 @@
               <label for="q10">To support B-Tree and LSM-Tree structures simultaneously</label>
             </div>
           </div>
+          <div class="question-eleven">
+            <p>11. How does communication proceed in MonadBFT during each round?</p>
+            <div>
+              <input type="radio" name="q11" id="q11" value="A" checked />
+              <label for="q11">Validators send signed responses to the leader</label>
+            </div>
+            <div>
+              <input type="radio" name="q11" id="q11" value="B" />
+              <label for="q11">The leader sends a signed message to the voters</label>
+            </div>
+            <div>
+              <input type="radio" name="q11" id="q11" value="C" />
+              <label for="q11">Validators multicast a timeout message to their peers</label>
+            </div>
+            <div>
+              <input type="radio" name="q11" id="q11" value="D" />
+              <label for="q11">Both A and B</label>
+            </div>
+          </div>
+          <div class="question-twelve">
+            <p>12. In MonadBFT, what triggers the assembly of a Timeout Certificate (TC)?</p>
+            <div>
+              <input type="radio" name="q12" id="q12" value="A" checked />
+              <label for="q12">Failure to receive a valid block within a specified time</label>
+            </div>
+            <div>
+              <input type="radio" name="q12" id="q12" value="B" />
+              <label for="q12">Unanimous voting by validators for a block</label>
+            </div>
+            <div>
+              <input type="radio" name="q12" id="q12" value="C" />
+              <label for="q12">The leader sends an invalid block proposal</label>
+            </div>
+            <div>
+              <input type="radio" name="q12" id="q12" value="D" />
+              <label for="q12">Both A and C</label>
+            </div>
+          </div>
+          <div class="question-thirteen">
+            <p>13. How are pending user transactions handled in the MonadBFT network?</p>
+            <div>
+              <input type="radio" name="q13" id="q13" value="A" checked />
+              <label for="q13">They are immediately included in a finalized block</label>
+            </div>
+            <div>
+              <input type="radio" name="q13" id="q13" value="B" />
+              <label for="q13">They are stored in the mempool of each validator</label>
+            </div>
+            <div>
+              <input type="radio" name="q13" id="q13" value="C" />
+              <label for="q13">They are communicated directly to the next leader</label>
+            </div>
+            <div>
+              <input type="radio" name="q13" id="q13" value="D" />
+              <label for="q13">Both A and C</label>
+            </div>
+          </div>
+          <div class="question-fourteen">
+            <p>14. How does Monad handle the potential issues of malicious nodes or execution mistakes?</p>
+            <div>
+              <input type="radio" name="q14" id="q14" value="A" checked />
+              <label for="q14">By enforcing strict consensus rules</label>
+            </div>
+            <div>
+              <input type="radio" name="q14" id="q14" value="B" />
+              <label for="q14">By relying on supermajority votes for execution</label>
+            </div>
+            <div>
+              <input type="radio" name="q14" id="q14" value="C" />
+              <label for="q14">By including a delayed merkle root in block proposals</label>
+            </div>
+            <div>
+              <input type="radio" name="q14" id="q14" value="D" />
+              <label for="q14">By limiting the gas budget for execution</label>
+            </div>
+          </div>
+          <div class="question-fifteen">
+            <p>15. What is the base level execution strategy employed by Monad?</p>
+            <div>
+              <input type="radio" name="q15" id="q15" value="A" checked />
+              <label for="q15">Pessimistic execution</label>
+            </div>
+            <div>
+              <input type="radio" name="q15" id="q15" value="B" />
+              <label for="q15">Sequential execution only</label>
+            </div>
+            <div>
+              <input type="radio" name="q15" id="q15" value="C" />
+              <label for="q15">Optimistic execution</label>
+            </div>
+            <div>
+              <input type="radio" name="q15" id="q15" value="D" />
+              <label for="q15">Parallel execution without state checking</label>
+            </div>
+          </div>
+          <div class="question-sixteen">
+            <p>16. How does Monad handle the potential issue of incorrect execution due to parallel processing?</p>
+            <div>
+              <input type="radio" name="q16" id="q16" value="A" checked />
+              <label for="q16">It ignores incorrect executions for efficiency</label>
+            </div>
+            <div>
+              <input type="radio" name="q16" id="q16" value="B" />
+              <label for="q16">It rolls back the entire block and re-executes all transactions</label>
+            </div>
+            <div>
+              <input type="radio" name="q16" id="q16" value="C" />
+              <label for="q16">It permanently discards transactions with incorrect execution</label>
+            </div>
+            <div>
+              <input type="radio" name="q16" id="q16" value="D" />
+              <label for="q16"
+                >It uses optimistic execution and re-executes the specific transaction with correct data</label
+              >
+            </div>
+          </div>
+          <div class="question-seventeen">
+            <p>17. How does MonadDb handle asynchronous I/O for the database?</p>
+            <div>
+              <input type="radio" name="q17" id="q17" value="A" checked />
+              <label for="q17">By spawning a large number of kernel threads</label>
+            </div>
+            <div>
+              <input type="radio" name="q17" id="q17" value="B" />
+              <label for="q17">By utilizing the latest kernel support for async I/O, such as io_uring</label>
+            </div>
+            <div>
+              <input type="radio" name="q17" id="q17" value="C" />
+              <label for="q17">By avoiding any async I/O to simplify the process</label>
+            </div>
+            <div>
+              <input type="radio" name="q17" id="q17" value="D" />
+              <label for="q17">By relying on traditional file system handling</label>
+            </div>
+          </div>
+          <div class="question-eighteen">
+            <p>18.What portability features does Monad offer for Ethereum compatibility?</p>
+            <div>
+              <input type="radio" name="q18" id="q18" value="A" checked />
+              <label for="q18">Full compatibility with Bitcoin scripting language</label>
+            </div>
+            <div>
+              <input type="radio" name="q18" id="q18" value="B" />
+              <label for="q18">Full support for Ethereum scripting language (Solidity)</label>
+            </div>
+            <div>
+              <input type="radio" name="q18" id="q18" value="C" />
+              <label for="q18">Full bytecode compatibility for the Ethereum Virtual Machine (EVM)</label>
+            </div>
+            <div>
+              <input type="radio" name="q18" id="q18" value="D" />
+              <label for="q18">Full compatibility with Hyperledger Fabric</label>
+            </div>
+          </div>
+          <div class="question-nineteen">
+            <p>19. What areas does Monad introduce pipelining and optimizations for?</p>
+            <div>
+              <input type="radio" name="q19" id="q19" value="A" checked />
+              <label for="q19">MonadCoin consensus and storage</label>
+            </div>
+            <div>
+              <input type="radio" name="q19" id="q19" value="B" />
+              <label for="q19">MonadBFT consensus and deferred execution</label>
+            </div>
+            <div>
+              <input type="radio" name="q19" id="q19" value="C" />
+              <label for="q19">Parallel Execution and MonadDb state backend</label>
+            </div>
+            <div>
+              <input type="radio" name="q19" id="q19" value="D" />
+              <label for="q19">Monad's client and blockchain scripting</label>
+            </div>
+          </div>
+          <div class="question-twenty">
+            <p>20. What performance advantages does Monad offer over existing blockchains?</p>
+            <div>
+              <input type="radio" name="q20" id="q20" value="A" checked />
+              <label for="q20">100 transactions per second (tps) with 10-second block times</label>
+            </div>
+            <div>
+              <input type="radio" name="q20" id="q20" value="B" />
+              <label for="q20">1 million transactions per second (tps) with 1-minute finality</label>
+            </div>
+            <div>
+              <input type="radio" name="q20" id="q20" value="C" />
+              <label for="q20">500 tps with 5-second block times</label>
+            </div>
+            <div>
+              <input type="radio" name="q20" id="q20" value="D" />
+              <label for="q20">10,000 tps with 1-second block times and 1-second finality</label>
+            </div>
+          </div>
           <div class="submit">
             <input type="submit" value="Submit" />
           </div>
